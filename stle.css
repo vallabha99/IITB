@@ -1,0 +1,33 @@
+.animal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 45%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .animal-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .animal-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    transition: transform 0.3s ease;
+  }
+  .animal-image:hover {
+    transform: scale(1.2);
+  }
+  .animal-details span {
+    font-size: 14px;
+    display: block;
+    margin: 2px 0;
+  }

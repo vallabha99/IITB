@@ -1,0 +1,15 @@
+{
+    "bigCats": [
+      { "species": "Big Cats", "name": "Tiger", "size": "10 ft", "location": "Asia", "image": "./Images/tiger.jpg" },
+      { "species": "Big Cats", "name": "Lion", "size": "8 ft", "location": "Africa", "image": "./Images/lion.jpg" }
+    ],
+    "dogs": [
+      { "species": "Dog", "name": "Rottweiler", "size": "2 ft", "location": "Germany", "image": "./Images/rottweiler.jpg" },
+      { "species": "Dog", "name": "German Shepherd", "size": "2 ft", "location": "Germany", "image": "./Images/germanShepherd.jpg" }
+    ],
+    "bigFish": [
+      { "species": "Big Fish", "name": "Shark", "size": "20 ft", "location": "Ocean", "image": "./Images/shark.jpg" },
+      { "species": "Big Fish", "name": "Blue Whale", "size": "30 ft", "location": "Ocean", "image": "./Images/blueWhale.jpg" }
+    ]
+  }
+  
