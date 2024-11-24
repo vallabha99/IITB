@@ -8,7 +8,7 @@ class TableManager {
     const container = document.getElementById(this.containerId);
     container.innerHTML = '';
 
-    // Create rows of two boxes per row
+   
     let currentRow;
     this.data.forEach((item, index) => {
       if (index % 2 === 0) {
@@ -42,7 +42,7 @@ class TableManager {
         if (key !== 'image') details.appendChild(detail);
       });
 
-      // Edit/Delete buttons
+
       const actions = document.createElement('div');
       actions.innerHTML = `
         <button class="btn btn-sm btn-primary me-2" onclick="editRow(${index}, '${this.containerId}')">Edit</button>
@@ -61,7 +61,7 @@ class TableManager {
   }
 
   addAnimal(newAnimal) {
-    // Validate
+
     const isDuplicate = this.data.some((animal) => animal.name === newAnimal.name);
     if (isDuplicate) {
       alert('Duplicate animal name!');
@@ -72,7 +72,6 @@ class TableManager {
   }
 }
 
-// Global functions for edit and delete
 function editRow(index, containerId) {
   const table = tableInstances[containerId];
   const animal = table.data[index];
@@ -89,7 +88,7 @@ function deleteRow(index, containerId) {
   table.renderTable(Object.keys(table.data[0]), ['name', 'location', 'size']);
 }
 
-// Fetch data from the JSON file
+
 const tableInstances = {};
 fetch('animals.json')
   .then((response) => response.json())
